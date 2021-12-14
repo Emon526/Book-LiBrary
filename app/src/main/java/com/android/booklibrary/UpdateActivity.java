@@ -72,7 +72,7 @@ public class UpdateActivity extends AppCompatActivity {
             title_input.setText(title);
             author_input.setText(author);
             pages_input.setText(pages);
-            Log.d("stev", title+" "+author+" "+pages);
+            Log.d("Data ", title+" "+author+" "+pages);
         }else{
             Toast.makeText(this, "No data.", Toast.LENGTH_SHORT).show();
         }
