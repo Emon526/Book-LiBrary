@@ -102,10 +102,11 @@ public class MainActivity extends AppCompatActivity {
             no_data.setVisibility(View.VISIBLE);
         }else{
             while (cursor.moveToNext()){
+
                 book_id.add(cursor.getString(0));
-                book_title.add(cursor.getString(1));
-                book_author.add(cursor.getString(2));
-                book_pages.add(cursor.getString(3));
+                book_title.add("Book Name : "+cursor.getString(1));
+                book_author.add("Author Name : "+cursor.getString(2));
+                book_pages.add("Page : " +cursor.getString(3));
             }
             empty_imageview.setVisibility(View.GONE);
             no_data.setVisibility(View.GONE);
